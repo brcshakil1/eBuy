@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    background-color: #eee;
+    min-height: 100svh;
+    border: 1px solid red;
+}
+
+ul a.active {
+    color: #00ADB5;
+}
+
+@media screen and (min-width: 768px) {
+    ul a.active {
+        color: #eee;
+    }
+}
