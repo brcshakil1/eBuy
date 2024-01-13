@@ -2,7 +2,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 const SearchProducts = () => {
   return (
-    <form className="absolute md:relative top-0 lg:w-[550px] border-2 hover:border-slate-400 md:w-[390px] bg-neutral flex justify-between rounded-full overflow-hidden">
+    <form className="hidden md:flex justify-between rounded-full overflow-hidden items-center lg:w-[550px] border-2 hover:border-slate-400 md:w-[390px] bg-neutral">
       <input
         type="text"
         placeholder="Search in eBuy"
