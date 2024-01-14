@@ -7,6 +7,7 @@ import {
 } from "firebase/auth";
 
 import { PropTypes } from "prop-types";
+import app from "./../firebase/firebase.config";
 
 export const AuthContext = createContext(null);
 
@@ -14,7 +15,7 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const auth = getAuth();
+  const auth = getAuth(app);
 
   const createUser = (email, pass) => {
     setIsLoading(true);
